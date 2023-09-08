@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papelería XYZ - Catálogo de Productos</title>
-    <link rel="stylesheet" href="estilos.css"> <!-- Agrega un archivo CSS para estilos personalizados -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
     <header>
@@ -21,31 +21,44 @@
     <main>
         <h2>Catálogo de Productos</h2>
 
-        <!-- Producto 1 -->
-        <div class="producto">
-            <img src="imagen_producto1.jpg" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <p>Descripción del Producto 1.</p>
-            <p>Precio: $10.00</p>
-            <button>Añadir al carrito</button>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="imagen_producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción del Producto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Precio: $10.00</p>
+                <button class="agregar-carrito" data-nombre="Producto 1" data-precio="10.00">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="imagen_producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción del Producto 2. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                <p>Precio: $8.00</p>
+                <button class="agregar-carrito" data-nombre="Producto 2" data-precio="8.00">Añadir al carrito</button>
+            </div>
+
+            <!-- Agrega más productos según sea necesario -->
         </div>
 
-        <!-- Producto 2 -->
-        <div class="producto">
-            <img src="imagen_producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p>Descripción del Producto 2.</p>
-            <p>Precio: $8.00</p>
-            <button>Añadir al carrito</button>
-        </div>
-
-        <!-- Agrega más productos según sea necesario -->
-
+        <aside class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                <!-- Aquí se agregarán los productos seleccionados -->
+            </ul>
+            <p class="total">Total: $<span id="total-carrito">0.00</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2023 Papelería XYZ. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
 </body>
 </html>
+
     
