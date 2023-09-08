@@ -1,0 +1,88 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalogo {
+    flex: 3;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+.agregar-carrito {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.carrito {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#lista-carrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#total-carrito {
+    font-weight: bold;
+}
+
+#vaciar-carrito {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+}
